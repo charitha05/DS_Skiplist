@@ -167,17 +167,17 @@ class SkipList(object):
 # Driver to test above code
 
 lst = SkipList(3, 0.5)
-print("1-Enter data\n2-Remove data\n3-Display data\n4-Exit")
+print("1-Enter number of persons watching advertisement\n2-Remove number of persons watching advertisement\n3-Display data\n4-Exit")
 ch=int(input())
 while(ch<=4):
     if(ch==1):
-        print("Input data to be inserted")
+        print("Enter number of persons watching advertisement to be inserted")
         x=int(input())
         lst.insertElement(x)
         n=lst.size()
         print("\nMedian: ",lst.runmedian(n))
     elif(ch==2):
-        print("Input data to be deleted ")
+        print("Enter number of persons watching advertisement to be deleted ")
         x=int(input())
         lst.deleteElement(x)
         n=lst.size()
